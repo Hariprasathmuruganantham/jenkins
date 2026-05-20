@@ -5,5 +5,5 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Name' }).click();
   await page.getByRole('textbox', { name: 'Name' }).fill('hariprasath');
   await page.getByRole('textbox', { name: 'Email Id' }).click();
-  await page.getByRole('textbox', { name: 'Email' }).fill('hari@gmail.com');
+  await page.getByRole('textbox', { name: '' }).fill('hari@gmail.com');
 });
