@@ -3,23 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                checkout([
-                    $class: 'GitSCM',
-                    branches: [[name: '*/main']],
-                    userRemoteConfigs: [[
-                        url: 'https://github.com/Hariprasathmuruganantham/jenkins.git'
-                    ]]
-                ])
-            }
-        }
-
-        stage('Debug Files') {
-            steps {
-                bat 'dir'
-            }
-        }
 
         stage('Install Dependencies') {
             steps {
